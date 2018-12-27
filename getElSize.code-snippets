@@ -1,0 +1,18 @@
+{
+  "Print to console": {
+    "prefix": "getelsize",
+    "body": [
+      "getElSize(id) {",
+      "  return new Promise((res, rej) => {",
+      "    uni.createSelectorQuery().select(\"#\" + id).fields({",
+      "      size: true,",
+      "      scrollOffset: true,",
+      "    }, (data) => {",
+      "      res(data);",
+      "    }).exec();",
+      "  })",
+      "},",
+    ],
+    "description": "Generation getElSize methods"
+  }
+}
