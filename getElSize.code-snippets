@@ -2,6 +2,14 @@
   "Print to console": {
     "prefix": "getelsize",
     "body": [
+      "/**",
+      "* @Description: 选则元素相关，uni中移动端使用",
+      "* @Author: 李啸竹",
+      "* @param {select} 选则一个节点 ",
+      "* @param {selectAll} 选则所有节点",
+      "* @param {selectViewport} 选择显示区域，可用于获取显示区域的尺寸、滚动位置等信息，返回一个 NodesRef 对象实例。",
+      "* @param {exec} 执行所有的请求。请求结果按请求次序构成数组，在callback的第一个参数中返回。",
+      "*/",
       "getElSize(id) {",
       "  return new Promise((res, rej) => {",
       "    uni.createSelectorQuery().select(\"#\" + id).fields({",
