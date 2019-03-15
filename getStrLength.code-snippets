@@ -6,13 +6,24 @@
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
 	// Placeholders with the same ids are connected.
 	// Example:
-	// "Print to console": {
-	// 	"scope": "javascript,typescript",
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
+	"Print to console": {
+		"scope": "javascript,typescript",
+		"prefix": "getLength",
+		"body": [
+			"function getLength(val) {",
+      "  var str = new String(val);",
+      "  var bytesCount = 0;",
+      "  for (var i = 0 ,n = str.length; i < n; i++) {",
+      "      var c = str.charCodeAt(i);",
+      "      if ((c >= 0x0001 && c <= 0x007e) || (0xff60<=c && c<=0xff9f)) {",
+      "          bytesCount += 1;",
+      "      } else {",
+      "          bytesCount += 2;",
+      "      }",
+      "  }",
+      "  return bytesCount;",
+    	"}",
+		],
+		"description": "获取字节长度"
+	}
 }
