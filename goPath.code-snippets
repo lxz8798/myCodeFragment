@@ -1,0 +1,20 @@
+{
+	"Print to console": {
+		"prefix": "xzg",
+		"body": [
+			"/**"
+			" * @Description: $1"
+			" * @Author: 李啸竹"
+			" * @param {$2} $3"
+			" */"
+			"Vue.prototype.goPath = function (path, query) {"
+      "  this.$router.push({"
+      "    path: '/wrap/' + path,"
+      "    query"
+      "  })"
+      "}"
+		],
+		"description": "挂载在Prototype上的gopath"
+	}
+	
+}

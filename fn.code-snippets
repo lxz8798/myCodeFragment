@@ -1,0 +1,22 @@
+{
+	"Print to console": {
+		"prefix": "xzfn",
+		"body": [
+			"/**"
+      " * @Description: 描述$1"
+      " * @Author: 李啸竹"
+      " * @param {参数$2} "
+      " */"
+      "  async fn$3(todo) {"
+      "      let params, res;"
+      "      params = {"
+			"				$4"
+      "      }"
+      "      res = await this.$5http.get("$6");"
+      "      console.log(res,'res')"
+      "  },"
+		],
+		"description": "生成methods"
+	}
+	
+}

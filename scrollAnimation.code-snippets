@@ -1,7 +1,12 @@
 {
 	"Print to console": {
-		"prefix": "scrollAnimation",
+		"prefix": "xzsa",
 		"body": [
+			"/**"
+			" * @Description: $1"
+			" * @Author: 李啸竹"
+			" * @param {$2} $3"
+			" */"
 			"scrollAnimation(currentY, targetY) {",
 			"// 获取当前位置方法",
 			"// const currentY = document.documentElement.scrollTop || document.body.scrollTop",
@@ -22,6 +27,6 @@
 			"  }, 1)",
 			"}",
 		],
-		"description": "Create vue template"
+		"description": "滚动条动画"
 	}
 }
