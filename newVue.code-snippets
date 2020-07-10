@@ -3,14 +3,17 @@
     "prefix": "xzvue",
     "body": [
       "<template>",
-      "  <div class=\"$1\-wrap"></div>",
+      "  <div :class=\"name\"></div>",
       "</template>",
       "<script>",
+      "const name = '$1';",
 			"import TODO$2 from '../components/todo.vue'",
       "export default {",
-      "    props: {},",
+      "  props: {},",
       "    data() {",
-      "        return {};",
+      "      return {",
+      "        name: name",
+      "      };",
       "    },",
       "    computed: {},",
       "    created() {}, // 移动端使用uni onLoad()代替Vue created()", 
@@ -21,7 +24,7 @@
       "};",
       "</script>",
       "<style lang=\"scss\">",
-			"div.$4-warap {}"
+			"div.$4 {}"
       "</style>",
     ],
     "description": "生成一个.vue的模板格式文件"
